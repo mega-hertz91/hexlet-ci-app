@@ -1,9 +1,9 @@
 name: Build hexlet demo project
-on: [push]
+on: push
 jobs:
   build:
     runs-on: ubuntu-latest
     steps:
-      - make setup
-      - make test
-      - make lint
+      setup: make setup
+      test: make test
+      lint: make lint
